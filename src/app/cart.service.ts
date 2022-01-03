@@ -5,18 +5,18 @@ import { Product } from './products';
   providedIn: 'root',
 })
 export class CartService {
-  carItems: Product[] = [];
+  items: Product[] = [];
   constructor() {}
   addToCart(product: Product) {
-    this.carItems.push(product);
+    this.items.push(product);
   }
 
   getItems() {
-    return this.carItems;
+    return this.items;
   }
 
   clearCart() {
-    this.carItems = [];
-    return this.carItems;
+    this.items = [];
+    return this.items;
   }
 }

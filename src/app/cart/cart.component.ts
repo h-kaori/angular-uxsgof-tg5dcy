@@ -7,8 +7,6 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
-
-  items = this.cartService.getItems();
-  
+  hoges = this.cartService.getItems();
   constructor(private cartService: CartService) {}
 }
